@@ -1,0 +1,47 @@
+[user]
+        email = pengxlyw@gmail.com
+        name = Wang Peng
+[color]
+        ui = auto
+[alias]
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+        rb = rebase
+        l1 = log --oneline
+        ds = diff --staged
+        di = diff
+        dt = difftool
+        gclean = gc --aggressive --prune=now
+[core]
+        ;gitproxy = /Users/cyf/local/bin/git-proxy
+	excludesfile = ~/.gitignore
+        editor = /usr/bin/vim
+        quotepath = false
+	;autocrlf = input
+[rerere]
+        enabled = 1
+#[merge]
+#       tool = extMerge
+#[mergetool "extMerge"]
+#       cmd = extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+#       trustExitCode = false
+#[diff]
+#       external = extDiff
+
+[sendemail]
+        smtpserver = /usr/local/bin/msmtp
+        from = Wang Peng <wangpeng.wangp@alibaba-inc.com>
+[push]
+        default = matching
+[pull]
+        rebase = true
+[hub]
+        protocol = https
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
